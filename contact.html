@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact </title>
+    <script src="https://kit.fontawesome.com/2a6879c4a3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="details">
+             <label for="phonenumber">Phonenumber:</label>
+                <p>+123 456 987</p>
+                <label for="address">Address:</label>
+                <p>123 Business St, City, Country</p>
+        </div>
+        
+        <form action="/submit" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <label for="email" >Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                <br>
+                <br> 
+                <button type="submit"class="submit-btn">Send message</button>
+                <p class="form-feedback" id="form-feedback"></p>
+
+                
+
+                <button class="home"><a href="page.html">Back to home</a></button>
+            </div>
+        </form>
+
+
+       
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
